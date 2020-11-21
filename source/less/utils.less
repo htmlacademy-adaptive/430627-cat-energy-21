@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/oswaldregular.woff2') format('woff2'), url('../fonts/oswaldregular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/oswaldmedium.woff2') format('woff2'), url('../fonts/oswaldmedium.woff') format('woff');
+}
+
+@title-font: 'Oswald', Arial, sans-serif;
+@main-font: 'Arial', sans-serif;
+@basic-green: #68B738;
+@hover-green: #5EAA2F;
+@black: #000;
+@white: #fff;
+@basic-gray: #F2F2F2;
+@gray: #EAEAEA;
+@border-gray: #E6E6E6;
+@dark-grey: #444444;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.simple-text (@text-size: 14px; @text-height: 18px) {
+  font-family: @main-font;
+  color: @dark-grey;
+  font-size: @text-size;
+  line-height: @text-height;
+}
+
+.main-title(@title-size: 36px; @title-height: 40px) {
+  font-family: @title-font;
+  color: @black;
+  font-weight: normal;
+  font-size: @title-size;
+  line-height: @title-height;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.center {
+  padding: 0 20px;
+  margin: auto;
+}
+
+.button {
+  background: @basic-green;
+  color: @white;
+  font-family: @title-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 11px 0;
+
+  &:hover {
+    background: @hover-green;
+  }
+  &:active {
+    color: rgba(@white, 30%);
+  }
+}

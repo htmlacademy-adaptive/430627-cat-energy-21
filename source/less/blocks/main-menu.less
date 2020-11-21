@@ -1,0 +1,35 @@
+.main-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu__item {
+  border-bottom: 1px solid #E6E6E6;
+  padding: 22px 0 24px 0;
+  text-align: center;
+}
+
+.main-menu__item:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+
+.main-menu__link {
+  .main-title(20px, 20px);
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+    border: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: none;
+  }
+
+  &--active {
+    border-bottom: 2px solid @basic-green;
+  }
+}
