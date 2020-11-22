@@ -1,0 +1,36 @@
+.example {
+  padding-top: 27px;
+  background: @gray;
+}
+
+.example__title {
+  .main-title();
+  margin: 0 0 33px 0;
+}
+
+.example__text {
+  .simple-text();
+}
+
+.example__number {
+  .main-title(24px; 24px);
+  border: 1px solid gray;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.example__description {
+  .simple-text(12px; 12px);
+  text-transform: lowercase;
+}
+
+.example__cost {
+  .main-title(14px; 20px);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__before-text, .example__after-text {
+  .main-title(16px; 20px);
+}
