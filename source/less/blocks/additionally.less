@@ -1,0 +1,46 @@
+.additionally__legend {
+  .main-title(24px;26px);
+  margin-bottom: 39px;
+}
+
+.additionally__list {
+  .clear-list();
+}
+
+.additionally__item {
+  margin-bottom: 20px;
+}
+
+.additionally__label {
+  .form-label(@special-dark-gray);
+  position: relative;
+  padding-left: 46px;
+}
+
+.additionally__input + .additionally__label::before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left:0px;
+  top: -0px;
+  border: 1px solid @radio-gray;
+}
+
+.additionally__input:checked + .additionally__label::after {
+  content: '';
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  background: url(https://via.placeholder.com/18x14) 0 0 no-repeat;
+}
+
+.additionally__input:hover + .additionally__label::before, .additionally__input:focus + .additionally__label::before {
+  border-color: @hover-gray;
+}
+
+.additionally__input:disabled + .additionally__label::before, .additionally__input:checked:disabled + .additionally__label::after {
+  opacity: 0.3;
+}
