@@ -4,10 +4,9 @@
 }
 
 .example__wrapper {
-   @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,7 +23,6 @@
     grid-column-end: 4;
     font-size: 60px;
     line-height: 60px;
-    justify-self: start;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,6 +71,7 @@
   border: 1px solid @radio-gray;
   border-radius: 3px;
 }
+
 .example__number {
   .main-title(24px; 24px);
   text-transform: uppercase;
@@ -96,7 +95,6 @@
 }
 
 .example__slider {
-
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -110,7 +108,8 @@
   }
 }
 
-.example__before-text, .example__after-text {
+.example__before-text,
+.example__after-text {
   .main-title(16px; 20px);
 }
 

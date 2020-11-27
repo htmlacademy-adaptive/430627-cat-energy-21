@@ -6,6 +6,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -15,7 +16,7 @@
   text-align: center;
 
   &:first-child {
-  border-top: 1px solid @border-gray;
+    border-top: 1px solid @border-gray;
   }
 
   @media (min-width: @tablet-width) {
@@ -37,6 +38,7 @@
     opacity: 0.6;
     border: none;
   }
+
   &:active {
     opacity: 0.3;
     border: none;
@@ -51,6 +53,7 @@
     line-height: 24px;
     padding-bottom: 8px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
@@ -72,6 +75,7 @@
   right: 23px;
   width: 18px;
   height: 18px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

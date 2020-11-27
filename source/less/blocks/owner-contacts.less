@@ -5,19 +5,34 @@
 
 .owner-contacts__list {
   .clear-list();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 78px;
+    width: 100%;
+  }
 }
 
 .owner-contacts__item {
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .owner-contacts__label {
   .form-label();
   margin-right: 14px;
+  white-space: nowrap;
 }
 
 .owner-contacts__input {
   .form-label(@special-dark-gray);
+  box-sizing: border-box;
   border: 1px solid @radio-gray;
   padding: 13px 15px;
+  width: 100%;
 }
