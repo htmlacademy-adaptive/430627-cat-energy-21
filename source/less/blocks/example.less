@@ -3,20 +3,78 @@
   background: @gray;
 }
 
+.example__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
+}
+
 .example__title {
   .main-title();
   margin: 0 0 33px 0;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
 }
 
 .example__text {
   .simple-text();
+  width: 279px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+.example__list {
+  display: flex;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+.example__item {
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  border: 1px solid @radio-gray;
+  border-radius: 3px;
 }
 
 .example__number {
   .main-title(24px; 24px);
-  border: 1px solid gray;
   text-transform: uppercase;
-  display: inline-block;
   vertical-align: center;
 }
 
@@ -29,8 +87,32 @@
   .main-title(14px; 20px);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
 }
 
-.example__before-text, .example__after-text {
+.example__slider {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
+
+.example__before-text,
+.example__after-text {
   .main-title(16px; 20px);
+}
+
+.example__image--slim-cat {
+  display: none;
 }

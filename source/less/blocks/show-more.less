@@ -1,11 +1,11 @@
 .show-more {
-position: relative;
+  position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 2px;
     height: 30px;
-    background-color:  #D3D3D3;
+    background-color: @show-gray;
     position: absolute;
     top: 26px;
     left: 50%;
@@ -13,13 +13,13 @@ position: relative;
   }
 
   &::after {
-    content: '';
+    content: "";
     width: 2px;
     height: 30px;
-    background-color:  #D3D3D3;
+    background-color: @show-gray;
     position: absolute;
     top: 26px;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -42,6 +42,7 @@ position: relative;
   &:hover {
     background-color: @special-light-gray;
   }
+
   &:active {
     color: rgba(@dark-grey; 30%);
   }

@@ -5,10 +5,27 @@
 
 .additionally__list {
   .clear-list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .additionally__item {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 221px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 104px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .additionally__label {
@@ -18,29 +35,31 @@
 }
 
 .additionally__input + .additionally__label::before {
-  content: '';
+  content: "";
   width: 28px;
   height: 28px;
   position: absolute;
-  left:0px;
-  top: -0px;
+  left: 0;
+  top: 0;
   border: 1px solid @radio-gray;
 }
 
 .additionally__input:checked + .additionally__label::after {
-  content: '';
+  content: "";
   width: 18px;
   height: 14px;
   position: absolute;
   top: 8px;
   left: 6px;
-  background: url(https://via.placeholder.com/18x14) 0 0 no-repeat;
+  background: url("https://via.placeholder.com/18x14") 0 0 no-repeat;
 }
 
-.additionally__input:hover + .additionally__label::before, .additionally__input:focus + .additionally__label::before {
+.additionally__input:hover + .additionally__label::before,
+.additionally__input:focus + .additionally__label::before {
   border-color: @hover-gray;
 }
 
-.additionally__input:disabled + .additionally__label::before, .additionally__input:checked:disabled + .additionally__label::after {
+.additionally__input:disabled + .additionally__label::before,
+.additionally__input:checked:disabled + .additionally__label::after {
   opacity: 0.3;
 }
