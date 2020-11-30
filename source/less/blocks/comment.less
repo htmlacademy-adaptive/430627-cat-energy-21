@@ -1,3 +1,13 @@
+.comment__legend {
+  .main-title(24px;26px);
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .comment__text {
   box-sizing: border-box;
   height: 150px;
@@ -7,9 +17,9 @@
   .form-label();
   border: 1px solid @input-gray;
   resize: none;
-}
 
-.comment__legend {
-  .main-title(24px;26px);
-  margin-bottom: 24px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -2,6 +2,14 @@
   margin-bottom: 14px;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .about-cat__list {
@@ -11,6 +19,11 @@
 .about-cat__label {
   .form-label();
   margin-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .about-cat__input {
@@ -22,4 +35,10 @@
   text-transform: uppercase;
   color: @dark-grey;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
 }

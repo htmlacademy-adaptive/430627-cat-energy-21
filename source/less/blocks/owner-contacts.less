@@ -1,6 +1,11 @@
 .owner-contacts__legend {
   .main-title(24px;26px);
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .owner-contacts__list {
@@ -27,6 +32,11 @@
   .form-label();
   margin-right: 14px;
   white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .owner-contacts__input {
@@ -35,4 +45,10 @@
   border: 1px solid @radio-gray;
   padding: 13px 15px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
 }
