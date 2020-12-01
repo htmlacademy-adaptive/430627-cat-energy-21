@@ -1,6 +1,11 @@
 .additionally__legend {
   .main-title(24px;26px);
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additionally__list {
@@ -32,6 +37,11 @@
   .form-label(@special-dark-gray);
   position: relative;
   padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .additionally__input + .additionally__label::before {

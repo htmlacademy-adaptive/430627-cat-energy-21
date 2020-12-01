@@ -2,6 +2,12 @@
   @media (min-width: @tablet-width) {
     padding: 25px 28px;
   }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    height: 196px;
+    padding: 24px 28px 30px 28px;
+  }
 }
 
 .programs-type__list {
@@ -14,12 +20,21 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .programs-type__label {
   .form-label(@special-dark-gray);
   position: relative;
   padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .programs-type__input + .programs-type__label::before {
@@ -31,17 +46,29 @@
   top: 0;
   border: 1px solid @radio-gray;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .programs-type__input:checked + .programs-type__label::after {
   content: "";
-  width: 13px;
+  width: 1px;
   height: 13px;
   position: absolute;
   top: 8px;
   left: 8px;
   background-color: @basic-green;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
 }
 
 .programs-type__input:hover + .programs-type__label::before,
