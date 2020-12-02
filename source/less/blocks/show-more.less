@@ -1,5 +1,8 @@
 .show-more {
   position: relative;
+  padding: 0 20px;
+  border: none;
+  background: none;
 
   &::before {
     content: "";
@@ -20,6 +23,10 @@
     position: absolute;
     top: 26px;
     left: 50%;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @special-light-gray;
   }
 }
 

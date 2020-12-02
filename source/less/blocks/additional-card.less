@@ -1,9 +1,23 @@
 .additional-card {
   border-bottom: 1px solid @special-light-gray;
   padding: 19px 0 25px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   &:first-child {
     border-top: 1px solid @special-light-gray;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -1px;
+    border: 1px solid @special-light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid @special-light-gray;
   }
 }
 
@@ -15,9 +29,24 @@
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-.additional-card__characteristics-type,
+.additional-card__characteristics-type {
+  .simple-text(14px;14px);
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
 .additional-card__characteristics-value {
   .simple-text(14px;14px);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: end;
+}
+
+.additional-card__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
