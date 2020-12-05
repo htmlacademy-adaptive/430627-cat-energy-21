@@ -217,7 +217,6 @@
   background: @white;
   box-sizing: border-box;
   border: 1px solid @radio-gray;
-  box-sizing: border-box;
   border-radius: 6px;
   width: 84px;
   height: 14px;
@@ -246,7 +245,6 @@
 }
 
 .example__toggle {
-
   @media (min-width: @tablet-width) {
     position: absolute;
     width: 34px;
@@ -255,15 +253,15 @@
     border-radius: 50%;
     border: 1px solid @radio-gray;
 
-    &:after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: @basic-green;
-    border-radius: 50%;
-    top: 13px;
-    right: 13px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: @basic-green;
+      border-radius: 50%;
+      top: 13px;
+      right: 13px;
     }
   }
 }
