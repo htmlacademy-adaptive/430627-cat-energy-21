@@ -9,7 +9,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
+    padding: 77px 51px 58px 53px;
+    margin-bottom: 53px;
   }
 
 
@@ -53,18 +54,36 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
 .card-programs__text {
   .simple-text();
-  margin-bottom: 42px;
+  margin-bottom: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid @form-gray;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 377px;
-    margin-bottom: 51px;
+    width: 62%;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-bottom: 2px;
+  }
+}
+
+.card-programs--weight-gain .card-programs__text {
+  @media (min-width: @tablet-width) {
+    width: 57%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 
@@ -79,16 +98,5 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-
-@media (min-width: @tablet-width) {
-  .card-programs--slimming .card-programs__text {
-    width: 377px;
-  }
-
-  .card-programs--weight-gain .card-programs__text {
-    width: 342px;
   }
 }

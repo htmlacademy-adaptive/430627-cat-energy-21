@@ -1,9 +1,13 @@
 .programs__wrapper {
   padding-bottom: 7px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 17px;
+  }
+
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
