@@ -1,8 +1,13 @@
 .about {
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @border-gray;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
   }
 }
 
@@ -14,11 +19,16 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 280px 280px;
+    column-gap: 60px;
+    row-gap: 37px;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 280px;
+    column-gap: 80px;
     border: none;
   }
 }
@@ -40,8 +50,15 @@
   margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    height: 280px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 0;
+    padding-top: 80px;
+    margin: 0;
+    width: 75%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }

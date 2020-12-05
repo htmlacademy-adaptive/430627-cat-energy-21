@@ -4,16 +4,17 @@
   background: url("https://via.placeholder.com/280x270") 50% 80% no-repeat;
 
   @media (min-width: @tablet-width) {
-    padding-top: 64px;
-    padding-bottom: 525px;
+    padding-top: 73px;
+    padding-bottom: 526px;
     margin: 0;
     background: url("https://via.placeholder.com/709x609") 50% 263px no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     position: static;
-    padding-top: 111px;
-    background: url("https://via.placeholder.com/709x609") 558px 141px no-repeat;
+    padding-top: 124px;
+    padding-bottom: 271px;
+    background: url("https://via.placeholder.com/709x609") 558px 0 no-repeat;
   }
 }
 
@@ -24,11 +25,10 @@
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
-    padding-left: 117px;
   }
 
-  @media (min-width: @tablet-width) {
-    padding-left: 190px;
+  @media (min-width: @desktop-width) {
+
   }
 }
 
@@ -75,7 +75,11 @@
     width: 414px;
     text-align: start;
     padding: 0;
-    margin-bottom: 41px;
+    margin: 0 0 42px 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 82px;
   }
 }
 
@@ -92,6 +96,21 @@
     font-size: 20px;
     line-height: 20px;
     color: @black;
-    margin-bottom: 49px;
+    margin: 0 0 49px 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 79px;
+    margin-bottom: 51px;
+  }
+}
+
+.promo__button {
+  margin-left: 83px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+    padding-right: 30px;
+    padding-left: 23px;
   }
 }

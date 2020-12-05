@@ -1,16 +1,57 @@
 .address {
   display: flex;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    padding: 66px 96px 72px 77px;
+    position: absolute;
+    width: 40%;
+    top: 28%;
+    left: 110px;
+    background: @white;
+  }
 }
 
 .address__title {
   .main-title(16px; 18px);
   text-transform: uppercase;
   margin: 0;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 30%;
+    margin-top: 43px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .address__text {
   .simple-text(14px; 20px);
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 35px;
+    margin-right: 40px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    text-align: left;
+  }
 }
