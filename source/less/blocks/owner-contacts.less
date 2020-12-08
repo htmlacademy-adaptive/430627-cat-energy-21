@@ -1,20 +1,41 @@
+.owner-contacts {
+  border-top: 2px solid @basic-green;
+}
+
 .owner-contacts__legend {
   .main-title(24px;26px);
-  margin-bottom: 32px;
+  margin-bottom: 36px;
+  width: 60%;
+  padding: 12px 10px 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px 0 40px;
+    margin-left: 30px;
+    margin-bottom: 73px;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
   }
 }
 
 .owner-contacts__list {
-  .clear-list();
+  list-style: none;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
     gap: 78px;
     width: 100%;
+    padding: 0 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -51,4 +72,5 @@
     line-height: 30px;
     padding: 10px 20px;
   }
+
 }
