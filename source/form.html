@@ -33,13 +33,13 @@
       </div>
     </header>
 
-    <main class="page-main center">
+    <main class="page-main">
 
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="page-main__title center">Подбор программы</h1>
+      <p class="page-main__text center">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
         <fieldset class="form__about-cat about-cat">
-          <ul class="about-cat__list">
+          <ul class="about-cat__list center">
             <li class="about-cat__item">
               <label class="about-cat__label" for="cat-name">Имя:*</label>
               <input class="about-cat__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
@@ -55,7 +55,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__programs-type programs-type">
-          <ul class="programs-type__list">
+          <ul class="programs-type__list center">
             <li class="programs-type__item">
               <input class="programs-type__input visually-hidden" type="radio" name="programs-type-radio" value="slimming" id="type-slimming" checked>
               <label class="programs-type__label" for="type-slimming">Похудение</label>
@@ -72,7 +72,7 @@
         </fieldset>
         <fieldset class="form__owner-contacts owner-contacts">
           <legend class="owner-contacts__legend">Контактные данные (владельца кота)</legend>
-          <ul class="owner-contacts__list">
+          <ul class="owner-contacts__list center">
             <li class="owner-contacts__item">
               <label class="owner-contacts__label" for="owner-email">E-mail:*</label>
               <input class="owner-contacts__input owner-contacts__input--email" type="email" name="owner-email" id="owner-email" placeholder="Kuklachev@gmail.com" required>
@@ -86,11 +86,13 @@
         <fieldset class="form__comment comment">
           <legend class="comment__legend">Комментарий</legend>
           <label class="visually-hidden" for="comment">Комментарий о повадках кота</label>
-          <textarea class="comment__text" id="comment" name="comment">Расскажите обо всех повадках кота</textarea>
+          <div class="comment__wrapper center">
+            <textarea class="comment__text" id="comment" name="comment">Расскажите обо всех повадках кота</textarea>
+          </div>
         </fieldset>
         <fieldset class="form__additionally additionally">
           <legend class="additionally__legend">Дополнительно</legend>
-          <ul class="additionally__list">
+          <ul class="additionally__list center">
             <li class="additionally__item">
               <input class="additionally__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
@@ -118,8 +120,8 @@
     <footer class="page-footer">
       <div class="location">
         <div class="location__wrapper address center">
-          <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="address__title">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="address__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
         <div class="map">
           <img src="https://via.placeholder.com/320x362" class="map__image" width="320" height="362" alt="Магазин Cat Energy, ул. Большая Конюшенная 19/8, Санкт-Петербург">

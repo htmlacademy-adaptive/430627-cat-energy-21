@@ -1,10 +1,23 @@
+.comment {
+  border-top: 2px solid @basic-green;
+}
+
 .comment__legend {
   .main-title(24px;26px);
-  margin-bottom: 24px;
+  margin-bottom: 35px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px 0 40px;
+    margin-left: 30px;
+    margin-bottom: 73px;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -12,7 +25,7 @@
   box-sizing: border-box;
   height: 150px;
   width: 100%;
-  padding: 13px 12px 13px 15px;
+  padding: 10px 12px 13px 15px;
   margin: 0;
   .form-label();
   border: 1px solid @input-gray;
@@ -21,5 +34,16 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    height: 174px;
+  }
+}
+
+.comment__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
   }
 }
