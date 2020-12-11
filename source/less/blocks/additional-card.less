@@ -1,6 +1,6 @@
 .additional-card {
   border-bottom: 1px solid @special-light-gray;
-  padding: 19px 0 25px 0;
+  padding: 13px 0 17px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -11,13 +11,15 @@
   @media (min-width: @tablet-width) {
     margin-top: -1px;
     border: 1px solid @special-light-gray;
+    padding: 26px 38px 0 38px;
+    grid-template-columns: 62% 23% 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 325px 245px 1fr 244px;
     border: none;
     border-bottom: 1px solid @special-light-gray;
+    padding: 26px 0 10px 0;
   }
 }
 
@@ -31,12 +33,33 @@
   margin: 0;
   grid-column-start: 1;
   grid-column-end: 3;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column-end: 2;
+  }
 }
 
 .additional-card__characteristics-type {
   .simple-text(14px;14px);
   grid-column-start: 1;
   grid-column-end: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+    justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: start;
+  }
 }
 
 .additional-card__characteristics-value {
@@ -44,9 +67,32 @@
   grid-column-start: 2;
   grid-column-end: 3;
   justify-self: end;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 0;
+    justify-self: start;
+  }
 }
 
 .additional-card__button {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding: 18px 0;
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin: 0;
+    width: auto;
+  }
 }

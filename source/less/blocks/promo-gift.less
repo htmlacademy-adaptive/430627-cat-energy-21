@@ -3,6 +3,16 @@
   height: 289px;
   background: url("https://via.placeholder.com/280x289") no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 289px;
+    margin-top: 0;
+  }
 }
 
 .promo-gift__text {
@@ -12,4 +22,11 @@
   color: @white;
   margin: 0;
   padding: 186px 58px 0 61px;
+
+  @media (min-width: @desktop-width) {
+    padding: 186px 0 0 0;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
 }
