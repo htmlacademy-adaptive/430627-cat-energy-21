@@ -1,20 +1,35 @@
 .promo {
   position: relative;
   margin-bottom: 22px;
-  background: url("https://via.placeholder.com/280x270") 50% 80% no-repeat;
+  background: url("../img/promo-food-mobile.png") 50% 80% no-repeat;
+  background-size: 280px 270px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-food-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 73px;
     padding-bottom: 526px;
     margin: 0;
-    background: url("https://via.placeholder.com/709x609") 50% 263px no-repeat;
+    background: url("../img/promo-food.png") 50% 263px no-repeat;
+    background-size: 709px 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-food@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     position: static;
     padding-top: 124px;
     padding-bottom: 271px;
-    background: url("https://via.placeholder.com/709x609") 558px 0 no-repeat;
+    background: url("../img/promo-food.png") 558px 0 no-repeat;
+    background-size: 709px 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-food@2x.png");
+    }
   }
 }
 
@@ -32,11 +47,15 @@
   content: "";
   width: 100%;
   height: 302px;
-  background: @basic-green url("https://via.placeholder.com/320x302") no-repeat;
+  background: @basic-green url("../img/promo-background-mobile.jpg") no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img//promo-background-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background: none;
@@ -45,11 +64,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: @basic-green url("https://via.placeholder.com/720x694") no-repeat;
+    background: @basic-green url("../img/promo-background-desktop.jpg") no-repeat;
     width: 50%;
     height: 694px;
     top: 0;
     right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -102,7 +125,9 @@
 }
 
 .promo__button {
-  margin-left: 83px;
+  @media (min-width: @tablet-width) {
+    margin-left: 83px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-left: 80px;
