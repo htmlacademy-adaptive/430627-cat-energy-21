@@ -43,6 +43,7 @@
   margin-bottom: 14px;
   display: flex;
   align-items: center;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -53,6 +54,7 @@
   .form-label();
   margin-right: 14px;
   white-space: nowrap;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -72,4 +74,9 @@
     line-height: 30px;
     padding: 10px 20px;
   }
+}
+
+.owner-contacts__icon {
+  position: absolute;
+  right: 20px;
 }
