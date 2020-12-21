@@ -1,17 +1,56 @@
 .promo-gift {
   width: 100%;
   height: 289px;
-  background: url("https://via.placeholder.com/280x289") no-repeat;
+  background: url("../img/gift-background-mobile.jpg") no-repeat;
   background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background: url("../img/gift-icon.svg") no-repeat;
+    position: absolute;
+    top: 58px;
+    left: 101px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-background-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     height: 200px;
     margin-bottom: 76px;
+    background: url("../img/gift-background-tablet.jpg") no-repeat;
+    background-size: cover;
+
+    &::after {
+      width: 80px;
+      height: 82px;
+      top: 57px;
+      left: 78px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 289px;
     margin-top: 0;
+    background: url("../img/gift-background-desktop.jpg") no-repeat;
+    background-size: cover;
+
+    &::after {
+      top: 56px;
+      left: 84px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -22,6 +61,13 @@
   color: @white;
   margin: 0;
   padding: 186px 58px 0 61px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 0 0 423px;
+    width: 25%;
+    text-align: left;
+  }
 
   @media (min-width: @desktop-width) {
     padding: 186px 0 0 0;
