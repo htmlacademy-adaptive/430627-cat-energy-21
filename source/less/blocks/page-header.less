@@ -1,5 +1,4 @@
 .page-header__wrapper {
-  height: 66px;
   display: flex;
   align-content: flex-end;
 
@@ -9,8 +8,25 @@
     justify-content: space-between;
     padding: 0 30px 0 30px;
   }
+}
+
+.page-header__logo {
+  padding: 13px 0 12px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: 24px;
+  }
 
   @media (min-width: @desktop-width) {
-    height: 98px;
+    padding: 0;
+    margin-top: 52px;
+    margin-left: 80px;
+  }
+}
+
+.page-header__main-menu {
+  @media (min-width: @tablet-width) {
+    padding: 0 0 15px 0;
   }
 }
