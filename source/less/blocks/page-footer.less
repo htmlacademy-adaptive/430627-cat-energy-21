@@ -3,8 +3,28 @@
 }
 
 .page-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+  padding-bottom: 21px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.page-footer__logo {
+  margin-bottom: 26px;
+  align-self: center;
+}
+
+.page-footer__social {
+  margin-bottom: 13px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

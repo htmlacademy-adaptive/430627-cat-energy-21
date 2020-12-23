@@ -1,6 +1,24 @@
 .social__list {
   list-style: none;
   display: flex;
+  justify-content: center;
+  padding: 23px 0 13px 0;
+  margin: 0 0 17px 0;
+  border-bottom: 1px solid @form-gray;
+  border-top: 1px solid @form-gray;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.social__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
