@@ -1,0 +1,24 @@
+.copyright {
+  .simple-text(16px; 18px);
+  color: @icon-gray;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright:hover .copyright__icon {
+  color: @basic-green;
+}
+
+.copyright__text {
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.copyright__icon {
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
+  }
+}

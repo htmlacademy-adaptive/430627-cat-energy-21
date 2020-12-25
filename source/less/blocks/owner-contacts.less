@@ -4,16 +4,16 @@
 
 .owner-contacts__legend {
   .main-title(24px;26px);
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   width: 60%;
-  padding: 12px 10px 0 20px;
+  padding: 15px 10px 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 40px 0 40px;
-    margin-left: 30px;
-    margin-bottom: 73px;
+    padding: 0 40px 9px 40px;
+    margin-left: 29px;
+    margin-bottom: 67px;
     width: auto;
   }
 
@@ -45,6 +45,10 @@
   align-items: center;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 100%;
   }
@@ -52,13 +56,14 @@
 
 .owner-contacts__label {
   .form-label();
-  margin-right: 14px;
+  margin-right: 11px;
   white-space: nowrap;
   position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 17px;
   }
 }
 
@@ -66,17 +71,21 @@
   .form-label(@special-dark-gray);
   box-sizing: border-box;
   border: 1px solid @radio-gray;
-  padding: 13px 15px;
+  padding: 13px 36px 12px 13px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 20px;
+    padding: 10px 17px 10px 20px;
   }
 }
 
 .owner-contacts__icon {
   position: absolute;
-  right: 20px;
+  right: 14px;
+
+  @media (min-width: @desktop-width) {
+    right: 19px;
+  }
 }
