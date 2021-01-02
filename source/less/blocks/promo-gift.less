@@ -12,7 +12,7 @@
     background: url("../img/gift-icon.svg") no-repeat;
     position: absolute;
     top: 58px;
-    left: 101px;
+    left: calc(50% - 40px);
   }
 
   @media (min-resolution: 2dppx) {
@@ -42,10 +42,12 @@
     margin-top: 0;
     background: url("../img/gift-background-desktop.jpg") no-repeat;
     background-size: cover;
+    justify-self: end;
+    width: 77%;
 
     &::after {
       top: 56px;
-      left: 84px;
+      left: 35%;
     }
 
     @media (min-resolution: 2dppx) {
@@ -60,7 +62,7 @@
   line-height: 20px;
   color: @white;
   margin: 0;
-  padding: 186px 58px 0 61px;
+  padding: 188px 59px 0 56px;
   text-align: center;
 
   @media (min-width: @tablet-width) {

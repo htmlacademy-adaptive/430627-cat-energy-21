@@ -15,15 +15,17 @@
   align-self: center;
   justify-self: center;
 
-  //Временные стили
   @media (min-width: @tablet-width) {
-    width: 162px;
-    height: 200px;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
+    width: 169px;
+    height: 201px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -65,10 +67,10 @@
 
 .main-card__characteristics-item {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @radio-gray;
-    justify-content: space-between;
     padding-bottom: 7px;
     margin-bottom: 8px;
   }
@@ -87,6 +89,7 @@
 .main-card__button {
   grid-column-start: 1;
   grid-column-end: 3;
+  padding: 11px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
