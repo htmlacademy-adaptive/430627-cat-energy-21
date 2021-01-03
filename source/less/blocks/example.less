@@ -276,8 +276,11 @@
   width: 311px;
   margin-left: -20px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
     margin: 0 -41px 0 0;
   }
 }
@@ -287,6 +290,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    width: auto;
   }
 }
 

@@ -27,8 +27,8 @@
 
   @media (min-width: @tablet-width) {
     border: 1px solid @special-light-gray;
-    margin-top: 80px;
-    padding-bottom: 30px;
+    margin-top: 85px;
+    padding-bottom: 37px;
 
     &::before {
       height: 60px;
@@ -43,16 +43,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 103px;
+    margin-top: 92px;
   }
 }
 
 .show-more__title {
   .main-title(16px;20px);
   text-transform: uppercase;
-  padding-top: 61px;
+  padding-top: 63px;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -71,7 +71,7 @@
 .show-more__text {
   .simple-text(12px;16px);
   text-align: center;
-  margin-bottom: 18px;
+  margin: 0 0 20px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -86,9 +86,11 @@
 }
 
 .show-more__button {
+  font-size: 16px;
+  line-height: 20px;
   background-color: @basic-gray;
   color: @dark-grey;
-  padding: 20px 0;
+  padding: 11px 0 9px 0;
 
   &:hover {
     background-color: @special-light-gray;
