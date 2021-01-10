@@ -1,6 +1,16 @@
 .logo {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+
   @media (min-width: @desktop-width) {
     margin-top: 52px;
     margin-left: 80px;
+  }
+}
+
+.logo__text {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

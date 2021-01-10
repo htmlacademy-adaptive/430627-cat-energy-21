@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
@@ -29,8 +29,9 @@
           <picture class="logo__picture">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Cat Energy" >
+            <img src="img/logo-mobile.svg" alt="Cat Energy">
           </picture>
+            <img class="logo__text" src="img/logo-text.svg" alt="Cat Energy" width="101" height="18">
         </a>
         <nav class="page-header__main-menu main-menu main-menu---main-page">
           <button class="main-menu__toggle" type="button">
@@ -147,7 +148,7 @@
           <p class="address__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span class="address__city">Санкт-Петербург</span></p>
         </div>
         <div class="location__map map">
-          <img src="https://via.placeholder.com/320x362" class="map__image" width="320" height="362" alt="Магазин Cat Energy, ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUIyITytC" frameborder="1" allowfullscreen="true"></iframe>
         </div>
       </div>
       <div class="page-footer__bottom center">
