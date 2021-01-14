@@ -7,6 +7,45 @@
   }
 }
 
+.form__input {
+  .form-label(@special-dark-gray);
+  border: 1px solid @input-gray;
+  box-sizing: border-box;
+  height: 45px;
+
+  &:hover {
+    border-color: @radio-gray;
+  }
+
+  &:focus {
+    outline: 2px solid @dark-grey;
+  }
+
+  &:disabled {
+    outline: 2px solid @dark-grey;
+    background-color: @white;
+  }
+
+  &:disabled + .form-icon {
+    color: @basic-green;
+  }
+
+
+  &:required:invalid {
+    outline: 2px solid @error-red;
+  }
+
+  &:invalid + .form-icon {
+    color: @error-red;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
+}
+
 .form__about-cat {
   border: none;
   border-bottom: 1px solid @form-gray;
@@ -125,7 +164,7 @@
 }
 
 .form__bottom-text {
-  font-family: "Arial", sans-serif;
+  font-family: @main-font;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

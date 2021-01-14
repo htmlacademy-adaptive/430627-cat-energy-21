@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page__body">
 
@@ -29,14 +30,13 @@
           <picture class="logo__picture">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Cat Energy">
+            <img src="img/logo-mobile.svg" alt="Логотип Cat Energy">
           </picture>
-            <img class="logo__text" src="img/logo-text.svg" alt="Cat Energy" width="101" height="18">
+            <img class="logo__text" src="img/logo-text.svg" alt="Логотип Cat Energy" width="101" height="18">
         </a>
         <nav class="page-header__main-menu main-menu main-menu---main-page">
-          <button class="main-menu__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <!-- Классы для переключения кнопки при использовании js: main-menu__toggle--open - закрытое меню, main-menu__toggle--close - открытое меню -->
+          <button class="main-menu__toggle" type="button" aria-label="Открыть и закрыть меню"></button>
           <ul class="main-menu__list">
             <li class="main-menu__item">
               <a href="#" class="main-menu__link main-menu__link--active">Главная</a>
@@ -60,7 +60,7 @@
         <div class="promo__wrapper center">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <a href="#" class="promo__button button">Подобрать программу</a>
+          <a href="form.html" class="promo__button button">Подобрать программу</a>
         </div>
       </section>
 
@@ -69,12 +69,12 @@
           <div class="card-programs card-programs--slimming programs__card">
             <h3 class="card-programs__title">Похудение</h3>
             <p class="card-programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="card-programs__link">Каталог Slim</a>
+            <a href="catalog.html" class="card-programs__link">Каталог Slim</a>
           </div>
           <div class="card-programs card-programs--weight-gain programs__card">
             <h3 class="card-programs__title">Набор массы</h3>
             <p class="card-programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="#" class="card-programs__link">Каталог Pro</a>
+            <a href="catalog.html" class="card-programs__link">Каталог Pro</a>
           </div>
         </div>
       </section>
@@ -109,31 +109,23 @@
           <div class="example__slider">
             <div class="example__images">
               <picture class="example__picture">
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-example-desktop.webp 1x, img/before-example-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-example-tablet.webp 1x, img/before-example-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-example-mobile.webp 1x, img/before-example-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
 
-                <source media="(min-width: 1440px)" srcset="img/before-example-desktop.png 1x, img/before-example-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-example-tablet.png 1x, img/before-example-tablet@2x.png 2x">
-                <img src="img/before-example-mobile.png" srcset="img/before-example-mobile@2x.png 2x" class="example__image example__image--fat-cat" alt="Толстый кот до замены обычного корма на Cat Energy Slim">
+                <img class="example__image example__image--fat-cat" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" alt="Толстый кот до замены обычного корма на Cat Energy Slim">
               </picture>
               <picture class="example__picture">
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-example-desktop.webp 1x, img/after-example-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-example-tablet.webp 1x, img/after-example-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-example-mobile.webp 1x, img/after-example-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
 
-                <source media="(min-width: 1440px)" srcset="img/after-example-desktop.png 1x, img/after-example-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-example-tablet.png 1x, img/after-example-tablet@2x.png 2x">
-                <img src="img/after-example-mobile.png" srcset="img/after-example-mobile@2x.png 2x" class="example__image example__image--slim-cat" alt="Похудевший кот после замены обычного корма на Cat Energy Slim">
+                <img class="example__image example__image--slim-cat" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" alt="Похудевший кот после замены обычного корма на Cat Energy Slim">
               </picture>
             </div>
             <div class="example__controls">
-              <span class="example__before-text">Было</span>
+              <a href="#!" class="example__before-text">Было</a>
               <div class="example__scale">
                 <div class="example__bar"></div>
               </div>
-              <span class="example__after-text">Стало</span>
-              <div class="example__toggle"></div>
+              <a href="#!" class="example__after-text">Стало</a>
+              <div class="example__toggle" tabindex="0" role="button" aria-label="Ползунок слайдера"></div>
             </div>
           </div>
         </div>
@@ -148,7 +140,7 @@
           <p class="address__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span class="address__city">Санкт-Петербург</span></p>
         </div>
         <div class="location__map map">
-          <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUIyITytC" frameborder="1" allowfullscreen="true"></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2617703233952!2d30.323256611107507!3d59.940047951180624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610524979552!5m2!1sru!2sru" aria-hidden="false" tabindex="0" title="Интерактивная карта c адресом магазина Cat Energy"></iframe>
         </div>
       </div>
       <div class="page-footer__bottom center">
@@ -185,12 +177,13 @@
         </div>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright copyright">
           <span class="copyright__text">HTML Academy</span>
-          <svg width="27" height="34" class="copyright__icon">
+          <svg width="27" height="34" class="copyright__icon" aria-label="Перейти на сайт HTML Academy">
             <use xlink:href="#icon_htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
 
+  <script src="js/script.min.js"></script>
   </body>
 </html>
