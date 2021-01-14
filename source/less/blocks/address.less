@@ -1,10 +1,10 @@
 .address {
   display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
     padding-bottom: 57px;
   }
 
@@ -23,7 +23,6 @@
   .main-title(16px; 18px);
   text-transform: uppercase;
   margin: 0;
-  margin-right: 18px;
   width: 124px;
 
   @media (min-width: @tablet-width) {
@@ -42,7 +41,7 @@
 
 .address__text {
   .simple-text(14px; 20px);
-  margin: 0;
+  margin: 0 3px 0 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;

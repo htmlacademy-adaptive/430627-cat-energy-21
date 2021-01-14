@@ -4,12 +4,12 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 77px 52px 58px 53px;
+    padding: 77px 52px 57px 53px;
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 51px 60px 53px;
+    padding: 77px 51px 58px 53px;
     margin-bottom: 53px;
   }
 
@@ -40,7 +40,7 @@
 
     @media (min-width: @desktop-width) {
       background: @basic-gray url("../img/cat-gain-weight.svg") 34px 46px no-repeat;
-      background-size: 134px 100px;
+      background-size: 134px 102px;
     }
   }
 }
@@ -60,7 +60,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
   }
 }
 
@@ -69,6 +69,7 @@
   margin-bottom: 19px;
   padding-bottom: 22px;
   border-bottom: 1px solid @form-gray;
+  min-width: 240px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -80,7 +81,7 @@
 
   @media (min-width: @desktop-width) {
     width: auto;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 }
 
@@ -97,13 +98,38 @@
 .card-programs__link {
   .main-title(16px; 16px);
   text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/index-arrow.svg");
+    position: absolute;
+    right: -40px;
+    top: 6px;
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../img/index-arrow-long.svg");
+  }
 
   &:active {
     color: rgba(@black, 30%);
   }
 
+  &:active::after {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      right: -51px;
+      top: 8px;
+    }
   }
 }
