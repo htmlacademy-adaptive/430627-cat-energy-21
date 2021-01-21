@@ -12,7 +12,7 @@
       height: 462px;
       background: @gray;
       position: absolute;
-      top: 620px;
+      bottom: 2px;
       left: 0;
       z-index: -1;
     }
@@ -25,7 +25,7 @@
       height: 462px;
       background: @gray;
       position: absolute;
-      top: 179px;
+      bottom: 0;
       left: 0;
       z-index: -1;
     }
@@ -46,7 +46,7 @@
   @media (min-width: @desktop-width) {
     border: none;
     padding-bottom: 75px;
-    grid-template-rows: 206px 96px 190px 1fr;
+    grid-template-rows: 206px auto 190px 1fr;
     grid-template-columns: 436px 1fr;
   }
 }
@@ -219,12 +219,11 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 1;
     grid-row-end: 4;
     justify-self: self-end;
-    align-self: center;
+    align-self: self-end;
     margin-right: -37px;
-    margin-bottom: 68px;
+    margin-bottom: -35px;
   }
 }
 
