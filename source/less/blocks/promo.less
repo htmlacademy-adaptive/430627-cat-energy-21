@@ -1,35 +1,17 @@
 .promo {
   position: relative;
   margin-bottom: 23px;
-  background: url("../img/promo-food-mobile.png") 50% 80% no-repeat;
-  background-size: 280px 270px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-food-mobile@2x.png");
-  }
 
   @media (min-width: @tablet-width) {
     padding-top: 60px;
     padding-bottom: 526px;
     margin: 0;
-    background: url("../img/promo-food-tablet.png") 50% 261px no-repeat;
-    background-size: 709px 609px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-food-tablet@2x.png");
-    }
   }
 
   @media (min-width: @desktop-width) {
     position: static;
     padding-top: 108px;
     padding-bottom: 267px;
-    background: url("../img/promo-food-desktop.png") 558px 26px no-repeat;
-    background-size: 552px 499px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-food-desktop@2x.png");
-    }
   }
 }
 
@@ -43,6 +25,32 @@
   }
 }
 
+.promo__wrapper::after {
+  content: "";
+  position: absolute;
+  background: url("../img/promo-food-mobile.png") no-repeat;
+  width: 280px;
+  height: 270px;
+  top: 167px;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/promo-food-tablet.png") no-repeat;
+    width: 709px;
+    height: 609px;
+    top: 261px;
+    right: 30px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/promo-food-desktop.png") no-repeat;
+    width: 552px;
+    height: 499px;
+    top: 141px;
+    right: 330px;
+  }
+}
+
 .promo::after {
   content: "";
   width: 100%;
@@ -51,7 +59,7 @@
   background-size: cover;
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: -10;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-background-green.png"), url("../img//promo-background-mobile@2x.jpg");
@@ -130,7 +138,7 @@
 .promo__button {
   @media (min-width: @tablet-width) {
     margin-left: 82px;
-    padding: 27px;
+    padding: 18px 27px 18px 26px;
   }
 
   @media (min-width: @desktop-width) {

@@ -69,10 +69,22 @@
   }
 }
 
+.main-menu---main-page {
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
 .main-menu---main-page .main-menu__link {
   @media (min-width: @desktop-width) {
     color: @white;
     border-color: @white;
+  }
+}
+
+.main-menu---main-page .main-menu__list {
+  @media (min-width: @desktop-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -104,10 +116,7 @@
 
 .main-menu__toggle--close + .main-menu__list {
   @media (max-width: @mobile-width-only) {
-    position: absolute;
-    background: @white;
-    width: 100%;
-    z-index: 100;
+    display: block;
   }
 }
 

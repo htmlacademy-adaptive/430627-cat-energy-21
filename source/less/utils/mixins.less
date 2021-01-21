@@ -1,0 +1,47 @@
+.simple-text (@text-size: 14px; @text-height: 18px) {
+  font-family: @main-font;
+  color: @dark-grey;
+  font-size: @text-size;
+  line-height: @text-height;
+}
+
+.main-title(@title-size: 36px; @title-height: 40px) {
+  font-family: @title-font;
+  color: @black;
+  font-weight: normal;
+  font-size: @title-size;
+  line-height: @title-height;
+}
+
+.form-label(@color: @dark-grey) {
+  font-family: @title-font;
+  color: @color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.clear-list() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-legend(@margin: 0) {
+  margin-left: @margin;
+  background-color: @white;
+  width: fit-content;
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+  }
+}
+
+.green-line(@top: 32px) {
+  position: absolute;
+  height: 2px;
+  width: 100vw;
+  top: @top;
+  border-top: 2px solid @basic-green;
+  z-index: -1;
+}

@@ -1,22 +1,29 @@
 .programs-type {
   @media (min-width: @tablet-width) {
-    padding: 25px 70px;
+    box-sizing: border-box;
+    padding: 25px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    box-sizing: border-box;
-    height: 196px;
-    padding: 0 110px 0 0;
+    min-height: 196px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .programs-type__list {
   list-style: none;
-  padding: 29px 20px 21px 20px;
+  padding: 13px 20px 5px 20px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid @form-gray;
     padding: 29px 0 29px 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    margin: 0;
+    width: 570px;
   }
 }
 

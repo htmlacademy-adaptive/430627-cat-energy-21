@@ -1,0 +1,27 @@
+.button {
+  background: @basic-green;
+  color: @white;
+  font-family: @title-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+
+  &:hover {
+    background: @hover-green;
+  }
+
+  &:active {
+    color: rgba(@white, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: auto;
+    padding: 26px 14px;
+  }
+}

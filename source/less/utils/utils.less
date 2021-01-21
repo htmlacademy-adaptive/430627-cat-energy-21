@@ -1,0 +1,52 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.center {
+  padding: 0 20px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    width: 1220px;
+  }
+}
+
+.button {
+  background: @basic-green;
+  color: @white;
+  font-family: @title-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+
+  &:hover {
+    background: @hover-green;
+  }
+
+  &:active {
+    color: rgba(@white, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 0px;
+    width: auto;
+    padding: 26px 14px;
+  }
+}

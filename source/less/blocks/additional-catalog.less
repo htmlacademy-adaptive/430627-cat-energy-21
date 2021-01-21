@@ -2,12 +2,27 @@
   @media (min-width: @tablet-width) {
     overflow: hidden;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: @basic-green;
+      width: 100vw;
+      top: 47px;
+      z-index: -1;
+    }
+  }
 }
 
 .additional-catalog__wrapper {
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 74% 1fr;
+    padding: 0;
   }
 }
 
@@ -37,14 +52,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
     margin: 23px 0 81px -35px;
     padding: 0 35px;
+    width: 338px;
 
     &::before {
-      top: 24px;
-      left: -75px;
+      height: 0;
     }
   }
 }
@@ -62,6 +75,7 @@
     grid-column-start: 1;
     grid-column-end: 2;
     margin-bottom: 85px;
+    width: 895px;
   }
 }
 

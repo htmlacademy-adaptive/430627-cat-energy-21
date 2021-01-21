@@ -14,9 +14,27 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
+
 // Styles
 
 const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
+// Styles.min
+
+const minStyles = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -31,7 +49,7 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.minStyles = minStyles;
 
 // HTML
 
@@ -147,6 +165,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    minStyles,
     html,
     scripts,
     sprite,
@@ -163,6 +182,7 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    minStyles,
     html,
     scripts,
     sprite,
