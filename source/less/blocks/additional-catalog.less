@@ -1,19 +1,23 @@
 .additional-catalog {
+  position: relative;
+  overflow: hidden;
+
   @media (min-width: @tablet-width) {
-    overflow: hidden;
-  }
-
-  @media (min-width: @desktop-width) {
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
       height: 2px;
       background-color: @basic-green;
       width: 100vw;
-      top: 47px;
+      left: 0;
+      top: 52px;
       z-index: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      top: 47px;
     }
   }
 }
@@ -29,25 +33,34 @@
 .additional-catalog__title {
   .main-title(24px;24px);
   margin-bottom: 35px;
+  background-color: @white;
+  padding-right: 22px;
+  width: fit-content;
+  margin-top: 0px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: @basic-green;
+    width: 100vw;
+    left: 50%;
+    top: 15px;
+    z-index: -1;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 37px;
     display: inline-block;
-    background-color: @white;
+    margin-top: 30px;
     margin-bottom: 82px;
+    width: auto;
     position: relative;
 
     &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      top: 22px;
-      background-color: @basic-green;
-      width: 100vw;
-      left: -30px;
-      z-index: -1;
+      height: 0;
     }
   }
 
